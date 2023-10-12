@@ -41,7 +41,9 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
             startActivity(toLoad);
         }
         else if(view.getId() == R.id.view_ending_button){
-            Toast.makeText(this,"view ending click",Toast.LENGTH_SHORT).show();
+            Intent toView = new Intent(this, Endings.class);
+            startActivity(toView);
+            //Toast.makeText(this,"view ending click",Toast.LENGTH_SHORT).show();
         }
     }
 }
